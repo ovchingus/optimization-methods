@@ -1,9 +1,9 @@
 import math
+from util import gr
 
 '''python program for golden section search.  This implementation
    does not reuse function evaluations and assumes the minimum is c
    or d (not on the edges at a or b)'''
-gr = (math.sqrt(5) + 1) / 2
 
 def golden_section(f, a, b, tolerance = 1e-5, max_iterations = 100):
     '''

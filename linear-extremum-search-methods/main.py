@@ -1,5 +1,6 @@
 from dichotomy import dichotomy
 from golden_section import golden_section
+from fibonacci import fibonacci
 from math import pi, cos
 
 
@@ -26,3 +27,5 @@ print(dichotomy(func, a, b, 1e-5, 5))
 print('Golden section: ')
 print(golden_section(func, a, b, 1e-5, 5))
 
+print('PHIBONACCI FUCK HARD: ')
+print(fibonacci(func, a, b, 1e-5, 5))

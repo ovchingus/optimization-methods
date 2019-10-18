@@ -29,20 +29,3 @@ def dichotomy(f, a, b, tolerance = 1e-5, max_iterations = 100):
             a = mid
 
     return 'Method error, max iterations exceeded'
-
-
-
-
-    # while b - a > tolerance:
-    #     if (iteration > max_iterations):
-    #          return 'Message error, max call exceeded.'
-    #     iteration += 1
-
-    #     c = (a + b) / 2
-    #     if fun(c) == 0 or fun(b) * fun(c) < 0:
-    #         a = c
-    #     else:
-    #         b = c
-    #     print(a, b, c)
-
-    # return c

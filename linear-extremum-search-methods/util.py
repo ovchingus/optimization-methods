@@ -5,3 +5,4 @@ def sign(x):
     return int(x > 0)
 
 golden_ratio = (1 + sqrt(5)) / 2
+

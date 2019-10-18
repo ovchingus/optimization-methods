@@ -1,13 +1,21 @@
-import dichotomy
+from dichotomy import dichotomy
+from math import pi, cos
 
 # 3 variant
 def function3(x):
     return (x - 2) ** 2
-
-a = -2.0
-b = 20.0
+var3 = [function3, -2.0, 20.0]
 
 
-print(dichotomy.dichotomy(function3, a, b, 0.01, 100))
+# 2 variant 
+def function2(x):
+    return cos(x)
+var2 = [function2, 0.0, pi]
+
+
+
+func, a, b = var3
+
+print(dichotomy(func, a, b, 0.01, 100))
 
 

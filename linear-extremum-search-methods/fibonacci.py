@@ -38,7 +38,7 @@ def fibonacci(func, a, b, tol = 1e-5, max_iterations = 100):
 
     # main loop
     while abs(x - xm) > (t2 - .5 * (b - a)):
-
+        iteration += 1
         if iteration > max_iterations:
             return 'Method error, max iterations exceeded'
 

@@ -20,12 +20,14 @@ def function2(x):
 var2 = [function2, 0.0, pi]
 
 func, a, b = var3
+tolerancy = 1e-5
+max_iterations = 100
 
 print('Dichotomy: ')
-print(dichotomy(func, a, b, 1e-5, 5))
+print(dichotomy(func, a, b, tolerancy, max_iterations))
 
 print('Golden section: ')
-print(golden_section(func, a, b, 1e-5, 5))
+print(golden_section(func, a, b, tolerancy, max_iterations))
 
 print('PHIBONACCI FUCK HARD: ')
-print(fibonacci(func, a, b, 1e-5, 5))
+print(fibonacci(func, a, b, tolerancy, max_iterations))

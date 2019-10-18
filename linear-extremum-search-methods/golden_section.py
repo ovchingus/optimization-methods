@@ -23,6 +23,8 @@ def golden_section(f, a, b, tolerance = 1e-5, max_iterations = 100):
     d = a + (b - a) / gr 
 
     while iteration < max_iterations:
+        iteration += 1
+        
         if abs(c - d) < tolerance:
             return (b + a) / 2
 

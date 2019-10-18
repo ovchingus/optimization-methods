@@ -1,6 +1,6 @@
 import util
 
-def dichotomy(fun, left, right, tolerance, max_iterations = 100):
+def dichotomy(fun, a, b, tolerance, max_iterations = 100):
     """
     INPUT: 
         Function fun, 
@@ -13,14 +13,38 @@ def dichotomy(fun, left, right, tolerance, max_iterations = 100):
     OUTPUT: 
         Value which differs from a root of f(x) = 0 by less than tolerance
     """
-    # iteration = 0
-    a = 0.0
-    b = 2.0
-    while b - a > tolerance:
-        c = (a + b) / 2
-        if fun(b) * fun(c) < 0:
-            a = c
-        else:
-            b = c
-    return (a + b) / 2
+    iteration = 0
+    while iteration < max_iterations:
+        mid = (a + b) / 2
 
+        if abs(b - a) <= tolerance:
+            return mid
+
+        f1 = fun(mid - tolerance)
+        f2 = fun(mid + tolerance)
+
+        print(f1, mid,  f2)
+
+        if f1 < f2:
+            b = mid
+        else:
+            a = mid
+
+    return 'Method error, max iterations exceeded'
+
+
+
+
+    # while b - a > tolerance:
+    #     if (iteration > max_iterations):
+    #          return 'Message error, max call exceeded.'
+    #     iteration += 1
+
+    #     c = (a + b) / 2
+    #     if fun(c) == 0 or fun(b) * fun(c) < 0:
+    #         a = c
+    #     else:
+    #         b = c
+    #     print(a, b, c)
+
+    # return c

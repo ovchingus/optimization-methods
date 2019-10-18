@@ -16,6 +16,6 @@ var2 = [function2, 0.0, pi]
 
 func, a, b = var3
 
-print(dichotomy(func, a, b, 0.01, 100))
+print(dichotomy(func, a, b, 0.001, 5))
 
 

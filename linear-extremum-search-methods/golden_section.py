@@ -13,7 +13,7 @@ def golden_section(f, a, b, tolerance = 1e-5, max_iterations = 100):
 
     example:
     >>> f = lambda x: (x-2)**2
-    >>> x = gss(f, 1, 5)
+    >>> x = gss(f, 1.0, 5.0)
     >>> x
     2.000009644875678
 

@@ -20,9 +20,9 @@ var2 = [function2, 0.0, pi]
 
 func, a, b = var3
 
-print('Dichotomy: \n')
+print('Dichotomy: ')
 print(dichotomy(func, a, b, 1e-5, 5))
 
-print('Golden section: \n')
+print('Golden section: ')
 print(golden_section(func, a, b, 1e-5, 5))
 

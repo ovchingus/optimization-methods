@@ -21,9 +21,10 @@ def golden_section(f, a, b, tolerance = 1e-5, max_iterations = 100):
     iteration = 0
     c = b - (b - a) / gr
     d = a + (b - a) / gr 
-    while abs(c - d) > tolerance:
-        if iteration > max_iterations:
-            return 'Method error, max iterations exceeded'
+
+    while iteration < max_iterations:
+        if abs(c - d) < tolerance:
+            return (b + a) / 2
 
         if f(c) < f(d):
             b = d
@@ -33,5 +34,4 @@ def golden_section(f, a, b, tolerance = 1e-5, max_iterations = 100):
         # we recompute both c and d here to avoid loss of precision which may lead to incorrect results or infinite loop
         c = b - (b - a) / gr
         d = a + (b - a) / gr
-
-    return (b + a) / 2
+    return 'Method error, max iterations exceeded'

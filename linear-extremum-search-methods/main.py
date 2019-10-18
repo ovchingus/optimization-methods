@@ -8,6 +8,6 @@ a = -2.0
 b = 20.0
 
 
-print(dichotomy.dichotomy(function3, a, b, 0.00001, 100))
+print(dichotomy.dichotomy(function3, a, b, 0.01, 100))
 
 

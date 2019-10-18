@@ -15,8 +15,10 @@ def dichotomy(f, a, b, tolerance = 1e-5, max_iterations = 100):
     '''
     iteration = 0
     while iteration < max_iterations:
-        mid = (a + b) / 2
+        iteration += 1
 
+        mid = (a + b) / 2
+        
         if abs(b - a) <= tolerance:
             return mid
 
@@ -27,5 +29,5 @@ def dichotomy(f, a, b, tolerance = 1e-5, max_iterations = 100):
             b = mid
         else:
             a = mid
-
+            
     return 'Method error, max iterations exceeded'

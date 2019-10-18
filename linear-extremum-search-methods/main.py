@@ -1,4 +1,5 @@
 from dichotomy import dichotomy
+from golden_section import golden_section
 from math import pi, cos
 
 # 3 variant
@@ -16,6 +17,9 @@ var2 = [function2, 0.0, pi]
 
 func, a, b = var3
 
-print(dichotomy(func, a, b, 0.001, 5))
+print('Dichotomy: \n')
+print(dichotomy(func, a, b, 1e-5, 5))
 
+print('Golden section: \n')
+print(golden_section(func, a, b, 1e-5, 5))
 

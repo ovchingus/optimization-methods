@@ -1,7 +1,5 @@
-import util
-
-def dichotomy(f, a, b, tolerance = 1e-5, max_iterations = 100):
-    '''
+def dichotomy(f, a, b, tolerance=1e-5, max_iterations=100):
+    """
     dichotomy search
     to find the minimum of f on [a,b]
     f: a strictly unimodal function on [a,b]
@@ -12,13 +10,13 @@ def dichotomy(f, a, b, tolerance = 1e-5, max_iterations = 100):
     >>> x
     1.99999880791
 
-    '''
+    """
     iteration = 0
     while iteration < max_iterations:
         iteration += 1
 
         mid = (a + b) / 2
-        
+
         if abs(b - a) <= tolerance:
             return mid
 
@@ -29,5 +27,5 @@ def dichotomy(f, a, b, tolerance = 1e-5, max_iterations = 100):
             b = mid
         else:
             a = mid
-            
+
     return 'Method error, max iterations exceeded'

@@ -1,8 +1,9 @@
 from math import sqrt
-from util import better_fib
+from .util import better_fib
 
-def fibonacci(func, a, b, tol = 1e-5, max_iterations = 100):
-    '''
+
+def fibonacci(func, a, b, tol=1e-5, max_iterations=100):
+    """
     fibonacci search
     to find the minimum of f on [a,b]
     f: a strictly unimodal function on [a,b]
@@ -13,9 +14,9 @@ def fibonacci(func, a, b, tol = 1e-5, max_iterations = 100):
     >>> x
     2.0
 
-    '''
+    """
     iteration = 0
-    
+
     c = .5 * (3.0 - sqrt(5.0))
     d = 0.0
 
@@ -50,7 +51,7 @@ def fibonacci(func, a, b, tol = 1e-5, max_iterations = 100):
             p = (x - v) * q - (x - w) * r
             q = 2.0 * (q - r)
 
-            if (q > 0.0):
+            if q > 0.0:
                 p = -p
             else:
                 q = -q
@@ -58,7 +59,7 @@ def fibonacci(func, a, b, tol = 1e-5, max_iterations = 100):
             r = e
             e = d
 
-        if abs(p) < abs(.5 * q * r) and p > q * (a - x) and p < q * (b - x):
+        if abs(p) < abs(.5 * q * r) and q * (a - x) < p < q * (b - x):
             # a parabolic interpolation step
             d = p / q
             u = x + d

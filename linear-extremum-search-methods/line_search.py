@@ -1,6 +1,3 @@
-import sys
-
-
 def line_search(fun, tolerance, max_iterations=100):
     iteration = 0
     x0 = 0

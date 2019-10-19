@@ -22,6 +22,7 @@ def line_search(fun, tolerance, max_iterations=100):
         if fun(xk) > fun(x_next):
             x_prev = xk
             xk = x_next
+        else:
+            return x_prev, x_next
         iteration += 1
-    return x_prev, x_next
 

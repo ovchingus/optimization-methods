@@ -1,5 +1,5 @@
 import math
-from .util import gr
+from util import gr
 
 '''python program for golden section search.  This implementation
    does not reuse function evaluations and assumes the minimum is c

@@ -1,5 +1,5 @@
 from math import sqrt
-from .util import better_fib
+from util import better_fib
 
 
 def fibonacci(func, a, b, tol=1e-5, max_iterations=100):

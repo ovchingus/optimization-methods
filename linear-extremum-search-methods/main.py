@@ -1,7 +1,7 @@
-from .dichotomy import dichotomy
-from .golden_section import golden_section
-from .fibonacci import fibonacci
-from .line_search import line_search
+from dichotomy import dichotomy
+from golden_section import golden_section
+from fibonacci import fibonacci
+from line_search import line_search
 from math import pi, cos
 
 

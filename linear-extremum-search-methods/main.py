@@ -24,14 +24,14 @@ func, a, b = var3
 tolerancy = 1e-5
 max_iterations = 100
 
-print('Dichotomy: ')
-print(dichotomy(func, a, b, tolerancy, max_iterations))
+# print('Dichotomy: ')
+# print(dichotomy(func, a, b, tolerancy, max_iterations))
 
-print('Line search: ')
-print(line_search(func, 0.001))
-
-print('Golden section: ')
-print(golden_section(func, a, b, tolerancy, max_iterations))
-
-print('PHIBONACCI FUCK HARD: ')
+# print('Line search: ')
+# print(line_search(func, 0.001))
+#
+# print('Golden section: ')
+# print(golden_section(func, a, b, tolerancy, max_iterations))
+#
+print('Fibonacci: ')
 print(fibonacci(func, a, b, tolerancy, max_iterations))

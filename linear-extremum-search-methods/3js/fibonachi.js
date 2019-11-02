@@ -1,5 +1,5 @@
-f = x => x ** 3 - x
-let [a,b] =[0.4094, 0.819]
+f = x => (x - 2) ** 2
+let [a,b] =[-2, 20]
 
 function calcFib(n) {
   let f,
@@ -32,7 +32,7 @@ function fib(x1, x2, a, b, y1, y2, n) {
       y1 = f(x1);
     }
     // console.log(x1, x2, a, b, n);
-    console.log('N = ' + n + ' x1 = ' + x1 + ' x2 = ' + x2 + ' a= ' + a + ' b= ' + b)
+    console.log()
   }
   if (n == 1) {
     console.log((x1 + x2) / 2);

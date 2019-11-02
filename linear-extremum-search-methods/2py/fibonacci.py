@@ -8,7 +8,6 @@ from funcion import (
     b,
     epsilon,
     calculate_function,
-    print_information,
     find_a_b
 )
 
@@ -38,15 +37,9 @@ while b - a > epsilon:
 
     a, b = find_a_b(a, b, x1, x2, y_x1, y_x2)
 
-    context = (
-        str(n).ljust(4, ' '),
-        a_previous, b_previous,
-        a, b,
-        (b_previous - a_previous) / (b - a),
-        x1, y_x1,
-        x2, y_x2
-    )
 
-    print_information(context)
+    print(a, b, x1, x2, y_x1, y_x2)
+
+
 
 print("\n\n%.5f %.5f %s" % (a, b, n))

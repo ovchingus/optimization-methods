@@ -7,19 +7,8 @@ def find_a_b(a, b, x1, x2, y_x1, y_x2):
 
 
 def calculate_function(x):
-    return cos(x)
+    return (x - 2) ** 2
 
 
-def calculate_function_2(x1, x2):
-    return (x2-x1**2)**2+(1-x1)**2
-
-
-def print_information(context):
-    template = "%s\t" + "%.6f\t" * 9
-
-    print(template % (context))
-
-
-a, b = Decimal(0), Decimal(pi)
-epsilon = Decimal(0.001)
-
+a, b = Decimal(-2.0), Decimal(20.0)
+epsilon = 1e-5
